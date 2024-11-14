@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - Meu Site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para o CSS personalizado com url_for -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url_for('views.index') }}">
+                <!-- Link para o logo com url_for -->
+                <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" width="30" height="30">
+                Meu Site
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('views.index') }}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('views.membros') }}">Área de Membros</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Bem-vindo ao Meu Site</h1>
+            <p class="lead">Um site simples e responsivo usando Bootstrap</p>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container my-5">
+        <section>
+            <h2>Sobre Nós</h2>
+            <p>Somos uma plataforma incrível que oferece conteúdo exclusivo para nossos membros.</p>
+        </section>
+
+        <section class="my-5">
+            <h2>Recursos</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Fácil de Usar</h3>
+                    <p>Navegue de maneira simples e rápida.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>100% Responsivo</h3>
+                    <p>Visualização otimizada para todos os dispositivos.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Suporte</h3>
+                    <p>Nossa equipe está pronta para ajudar!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

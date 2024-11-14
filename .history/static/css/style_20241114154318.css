@@ -1,0 +1,26 @@
+/* Estilos customizados */
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    color: white;
+}
+
+footer {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.bg-primary {
+    background-color: #18133c !important; /* Cor de fundo substituída */
+}
+
+.text-white {
+    color: #d8561f !important; /* Cor de texto substituída */
+}
+
