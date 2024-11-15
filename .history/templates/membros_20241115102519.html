@@ -15,8 +15,8 @@
         <div class="container">
             <a class="navbar-brand" href="{{ url_for('views.index') }}">
                 <!-- Link para o logo com url_for -->
-                <img src="{{ url_for('static', filename='img/logo.jpg') }}" alt="Logo" width="30" height="30">
-                Escolinha V3
+                <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" width="30" height="30">
+                Meu Site
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -32,32 +32,28 @@
 
     <!-- Conteúdo da Área de Membros -->
     <main class="container my-5">
-        <header class="bg-primary text-white text-center py-5">
-            <div class="container">
-                <h1>Área de Membros</h1>
-                <p class="lead">Bem-vindo à área exclusiva para nossos membros. Aqui você encontrará conteúdos especiais e informações apenas para usuários registrados.</p>
-            </div>
-        </header>
+        <h1>Área de Membros</h1>
+        <p>Bem-vindo à área exclusiva para nossos membros. Aqui você encontrará conteúdos especiais e informações apenas para usuários registrados.</p>
 
         <div class="card my-3">
             <div class="card-body">
                 <h5 class="card-title">Perfil do membro</h5>
                 <p class="card-text"></p>
-                <a href="{{ url_for('views.perfil') }}" class="btn btn-outline-primary color-primary">Acessar</a>
+                <a href="#" class="btn btn-outline-primary color-primary">Acessar</a>
             </div>
         </div>
         <div class="card my-3">
             <div class="card-body">
                 <h5 class="card-title">Área de pagamentos</h5>
                 <p class="card-text"></p>
-                <a href="{{ url_for('views.pagamentos') }}" class="btn btn-outline-primary color-primary">Acessar</a>
+                <a href="#" class="btn btn-outline-primary color-primary">Acessar</a>
             </div>
         </div>
         <div class="card my-3">
             <div class="card-body">
                 <h5 class="card-title">Eventos</h5>
                 <p class="card-text">acompanhe todos os eventos</p>
-                <a href="{{ url_for('views.eventos') }}" class="btn btn-outline-primary color-primary">Acessar</a>
+                <a href="#" class="btn btn-outline-primary color-primary">Acessar</a>
             </div>
         </div>
     </main>

@@ -13,7 +13,8 @@
 
 /* */
 header {
-    background-color: #18133c;
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
     color: white;
 }
 
@@ -38,7 +39,7 @@ header img {
 @media (min-width: 769px) {
 
     header img {
-        width: 70%;
+        width: 50%;
     }
-}
 
+}

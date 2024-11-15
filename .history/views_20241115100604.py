@@ -16,11 +16,3 @@ def membros():
 def pagamentos():
     return render_template('pagamentos.html')
 
-@views.route('/eventos')
-def eventos():
-    return render_template('eventos.html')
-
-@views.route('/perfil')
-def perfil():
-    return render_template('perfil.html')
-

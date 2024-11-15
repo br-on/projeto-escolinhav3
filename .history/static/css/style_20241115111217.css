@@ -35,10 +35,3 @@ header img {
     width: 100%;
 }
 
-@media (min-width: 769px) {
-
-    header img {
-        width: 70%;
-    }
-}
-

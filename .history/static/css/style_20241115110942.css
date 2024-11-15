@@ -13,7 +13,8 @@
 
 /* */
 header {
-    background-color: #18133c;
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
     color: white;
 }
 
@@ -32,13 +33,13 @@ footer {
 }
 
 header img {
-    width: 100%;
+    width: 50%;
 }
 
-@media (min-width: 769px) {
+@media (max-width: 769px) {
 
     header img {
-        width: 70%;
+        width: 100%;
     }
-}
 
+}

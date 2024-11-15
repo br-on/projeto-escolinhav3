@@ -25,16 +25,25 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('views.index') }}">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('views.membros') }}">Área de Membros</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="{{ url_for('views.pagamentos') }}">Pagamentos</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="text-center">
-        <img src="{{ url_for('static', filename='img/banner.jpg')}}" alt="">
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Bem-vindo a escolinha V3</h1>
+            <p class="lead">Crescendo no esporte, vencendo na vida!</p>
+        </div>
     </header>
     
+    <!-- Logo marca -->
+    <div class="topo-img">
+        <img src="{{ url_for('static', filename='img/logo.jpg') }}" alt="Logo">
+    </div>
+
     <!-- Conteúdo Principal -->
     <main class="container my-5">
         <section>
